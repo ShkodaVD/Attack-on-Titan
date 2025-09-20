@@ -10,6 +10,7 @@
 .dropdown {
   position: relative;
   display: inline-block;
+  padding-top: 50px;
 }
 
 .dropdown-content {
@@ -33,3 +34,13 @@
 .dropdown:hover .dropdown-content {display: block;}
 
 .dropdown:hover .dropbtn {background-color: #393d57;}
+
+.cap {
+  display: flex;
+  background-color: #f6f5f5;
+  justify-content: space-around;
+}
+
+.cap img{
+  width: 50%;
+}
