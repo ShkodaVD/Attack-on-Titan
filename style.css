@@ -10,7 +10,6 @@
 .dropdown {
   position: relative;
   display: inline-block;
-  padding-top: 50px;
 }
 
 .dropdown-content {
@@ -39,8 +38,17 @@
   display: flex;
   background-color: #f6f5f5;
   justify-content: space-around;
+  align-items: center;
 }
 
 .cap img{
-  width: 50%;
+  width: 40%;
+}
+
+.hello p{
+  font-size: 20px;
+}
+
+.hello h1{
+  font-size: 40px;
 }
