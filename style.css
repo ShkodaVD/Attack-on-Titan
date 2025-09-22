@@ -17,7 +17,7 @@
   position: absolute;
   background-color: #f1f1f1;
   min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
 }
 
@@ -47,8 +47,42 @@
 
 .hello p{
   font-size: 20px;
+  text-align: justify;
 }
 
 .hello h1{
   font-size: 40px;
+}
+
+h1{
+  color: #4f4f50;
+} 
+
+h1::after {
+  content: "";
+}
+
+.full{
+  background-color: #ffffff;
+}
+
+.hello{
+  text-align: center;
+  padding: 40px;
+}
+
+.two h1{
+  text-align: center;
+}
+
+.two video{
+  max-width: 45%;
+  height: auto;
+}
+
+.two {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  flex-direction: column;
 }
