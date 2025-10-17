@@ -1,0 +1,202 @@
+.dropbtn {
+  background-color: #c9c9c9;
+  color: rgb(15, 15, 15);
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  border-radius: 30px;
+  font-family: "Merriweather", serif;
+  font-optical-sizing: auto;
+  font-weight: weight; 
+  font-style: normal;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #8d8c8c;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  
+  a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+
+    &:hover {
+      background-color: #ffffff;
+    }
+  }
+}
+
+.dropdown:hover {
+  .dropdown-content {
+    display: block;
+  }
+
+  .dropbtn {
+    background-color: #8185a0;
+  }
+}
+
+.cap {
+  display: flex;
+  background-color: #464646;
+  justify-content: space-around;
+  align-items: center;
+
+  img {
+    width: 60%;
+  }
+}
+
+.hello {
+  text-align: center;
+  padding: 40px;
+
+  p {
+    text-align: justify;
+    color: #acacac;
+    font-family: "Merriweather", serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    font-size: 20px;
+  }
+
+  h1 {
+    font-size: 40px;
+    font-family: "Merriweather", serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+  }
+}
+
+h1 {
+  color: #b4b4b4;
+
+  &::after {
+    content: "";
+  }
+}
+
+.full {
+  background-color: #000000;
+}
+
+.two {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  flex-direction: column;
+
+  h1 {
+    text-align: center;
+    font-family: "Merriweather", serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    font-size: 40px;
+  }
+
+  video {
+    max-width: 45%;
+    height: auto;
+  }
+}
+
+.twovideo {
+  padding-left: 100px;
+}
+
+.three {
+  h1 {
+    display: flex;
+    padding-top: 20px;
+    gap: 40px;
+    align-items: center;
+    flex-direction: column;
+    font-family: "Merriweather", serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+  }
+}
+
+.person {
+  display: flex;
+  color: #b4b4b4;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 300px;
+  padding: 20px;
+  border: 1px solid #adadad;
+  border-radius: 10px;
+  background-color: rgb(85, 85, 85);
+  text-align: center;
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeInUp 0.8s ease forwards;
+
+  img {
+    width: 80%;
+    margin-bottom: 15px;
+    border-radius: 15px;
+    padding-left: 35px;
+  }
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 100%;
+
+  h2 {
+    padding-bottom: 15px;
+  }
+
+  p {
+    font-size: 22px;
+  }
+}
+
+.three-person {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.person:nth-child(1) {
+  animation-delay: 1.6s;
+}
+
+.person:nth-child(2) {
+  animation-delay: 1.8s;
+}
+
+.person:nth-child(3) {
+  animation-delay: 2.0s;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
