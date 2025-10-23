@@ -2,13 +2,13 @@
   background-color: #c9c9c9;
   color: rgb(15, 15, 15);
   padding: 16px;
-  font-size: 16px;
   border: none;
   border-radius: 30px;
   font-family: "Merriweather", serif;
   font-optical-sizing: auto;
   font-weight: weight;
   font-style: normal;
+  font-size: 16px;
 }
 
 .dropdown {
@@ -65,11 +65,11 @@
   font-size: 20px;
 }
 .hello h1 {
-  font-size: 40px;
   font-family: "Merriweather", serif;
   font-optical-sizing: auto;
   font-weight: weight;
   font-style: normal;
+  font-size: 40px;
 }
 
 h1 {
@@ -122,8 +122,8 @@ h1::after {
   display: flex;
   color: #b4b4b4;
   flex-direction: column;
-  align-items: flex-start;
-  width: 300px;
+  align-items: center;
+  width: 25%;
   padding: 20px;
   border: 1px solid #adadad;
   border-radius: 10px;
@@ -132,12 +132,13 @@ h1::after {
   opacity: 0;
   transform: translateY(30px);
   animation: fadeInUp 0.8s ease forwards;
+  margin: 0 10px;
 }
 .person img {
   width: 80%;
+  height: 30%;
   margin-bottom: 15px;
   border-radius: 15px;
-  padding-left: 35px;
 }
 
 .info {
@@ -183,4 +184,77 @@ h1::after {
     opacity: 1;
     transform: translateY(0);
   }
+}
+.Glav {
+  font-size: 18px;
+}
+.Glav a {
+  color: #b4b4b4;
+  text-decoration: none;
+  font-family: "Merriweather", serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+}
+.Glav:hover {
+  color: #d4d4d4;
+  text-decoration: underline;
+}
+
+.my {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 30px;
+}
+.my img {
+  max-width: 80%;
+  height: auto;
+  border-radius: 20px;
+}
+
+.my1 h1, .my1 h3 {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  flex-direction: column;
+  color: #b4b4b4;
+  font-family: "Merriweather", serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+}
+
+.hello2 {
+  text-align: center;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+.hello2 p {
+  text-align: justify;
+  color: #acacac;
+  font-family: "Merriweather", serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+  font-size: 20px;
+}
+.hello2 h1 {
+  font-family: "Merriweather", serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+  font-size: 25px;
+}
+.hello2 h3 {
+  text-align: justify;
+  color: #acacac;
+  font-family: "Merriweather", serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+  font-size: 22px;
 }/*# sourceMappingURL=xexe.css.map */
