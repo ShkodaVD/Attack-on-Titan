@@ -259,6 +259,11 @@ h1::after {
   font-size: 22px;
 }
 
+.my2 {
+  display: flex;
+  flex-wrap: wrap;
+  align-self: stretch;
+}
 .my2 img {
   border-radius: 40px;
   width: 300px;

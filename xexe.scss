@@ -301,6 +301,9 @@ h1 {
 }
 
 .my2 {
+  display: flex;
+  flex-wrap: wrap;
+  align-self: stretch;
   img {
     border-radius: 40px;
     width: 300px;
