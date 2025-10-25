@@ -257,4 +257,10 @@ h1::after {
   font-weight: weight;
   font-style: normal;
   font-size: 22px;
+}
+
+.my2 img {
+  border-radius: 40px;
+  width: 300px;
+  padding: 32px;
 }/*# sourceMappingURL=xexe.css.map */
