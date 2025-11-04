@@ -20,9 +20,10 @@
   display: none;
   position: absolute;
   background-color: #8d8c8c;
-  min-width: 160px;
+  min-width: 125px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
+  border-radius: 10px;
 }
 .dropdown-content a {
   color: black;
@@ -118,71 +119,54 @@ h1::after {
   font-style: normal;
 }
 
-.person {
+.three-person {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+.three-person .person {
   display: flex;
   color: #b4b4b4;
   flex-direction: column;
   align-items: center;
-  width: 25%;
   padding: 20px;
   border: 1px solid #adadad;
   border-radius: 10px;
   background-color: rgb(85, 85, 85);
   text-align: center;
   opacity: 0;
-  transform: translateY(30px);
-  animation: fadeInUp 0.8s ease forwards;
-  margin: 0 10px;
+  animation: fadeInOnScroll 0.8s ease-out forwards;
+  animation-timeline: view();
+  animation-range-start: entry 10%;
+  animation-range-end: cover 30%;
 }
-.person img {
+.three-person .person img {
   width: 80%;
-  height: 30%;
+  height: 35%;
   margin-bottom: 15px;
   border-radius: 15px;
 }
-
-.info {
+.three-person .person .info {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   width: 100%;
 }
-.info h2 {
+.three-person .person .info h2 {
   padding-bottom: 15px;
 }
-.info p {
+.three-person .person .info p {
   font-size: 22px;
 }
 
-.three-person {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: space-between;
-  padding-left: 30px;
-  padding-right: 30px;
-}
-
-.person:nth-child(1) {
-  animation-delay: 1.6s;
-}
-
-.person:nth-child(2) {
-  animation-delay: 1.8s;
-}
-
-.person:nth-child(3) {
-  animation-delay: 2s;
-}
-
-@keyframes fadeInUp {
+@keyframes fadeInOnScroll {
   from {
     opacity: 0;
-    transform: translateY(30px);
   }
   to {
     opacity: 1;
-    transform: translateY(0);
   }
 }
 .Glav {
@@ -268,4 +252,18 @@ h1::after {
   border-radius: 40px;
   width: 300px;
   padding: 32px;
+  opacity: 0;
+  animation: fadeInOnScroll 0.8s ease-out forwards;
+  animation-timeline: view();
+  animation-range-start: entry 10%;
+  animation-range-end: cover 30%;
+}
+
+@keyframes fadeInOnScroll {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }/*# sourceMappingURL=xexe.css.map */
